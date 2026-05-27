@@ -11,22 +11,22 @@ Follow the suggested reading path below to maximize your understanding, then put
 
 To get the most out of these materials, read them in the following specific order. Each file builds directly upon the concepts introduced in the previous one.
 
-### 1. 📂 `cpp_preprocessor.md` (The Doorway to C++)
+### 1. 📂 [`cpp_preprocessor.md` (The Doorway to C++)](cpp_preprocessor.md)
 
 * **Why start here?** Before you can write or understand any C++ program, you need to understand how files talk to each other. When you see `#include <iostream>` at the top of a file, you are using the preprocessor.
 * **Key Focus:** Learn the meaning behind `#include` and how the preprocessor prepares your code for compilation. This file de-mystifies that magical line of code you see at the top of every C++ file.
 
-### 2. 📂 `cpp_types.md` (The Master Reference)
+### 2. 📂 [`cpp_types.md` (The Master Reference)](cpp_types.md)
 
 * **Why read this next?** This is your comprehensive, complete reference table of all core C++ data types.
 * **Key Focus:** Study how C++ categorizes data (integers, floating-point numbers, characters, and booleans) and pay attention to how much memory (bytes) each type occupies. *Don't try to memorize the whole table right now!* Treat this as a dictionary that you will keep open and refer back to constantly.
 
-### 3. 📂 `using_basic_types.md` (The Tutorial)
+### 3. 📂 [`using_basic_types.md` (The Tutorial)](using_basic_types.md)
 
 * **Why read this next?** Now that you know what types exist in theory, this tutorial shows you how to actually use them in practice.
 * **Key Focus:** Learn how to *declare* and *initialize* variables. Pay attention to syntax rules, naming conventions, and how choosing a variable's data type alters how the computer handles its numerical or logical value.
 
-### 4. 📂 `input_and_output.md` (Making it Interactive)
+### 4. 📂 [`input_and_output.md` (Making it Interactive)](input_and_output.md)
 
 * **Why read this last?** Variables are only useful if you can feed data into them and see what happens inside.
 * **Key Focus:** Master `std::cout` (Console Output) to display messages to the user, and `std::cin` (Console Input) to read keyboard strokes directly into your variables. This file bridges the gap between static variables and a dynamic user experience.
