@@ -25,3 +25,16 @@
 |Raw / Native Binary| std::byte| Represents a single byte of raw data. No arithmetic allowed; only bitwise operations.	| C++17|
 |Void | void | Represents an empty set of values (absence of type). | C++98 (Legacy from C)|
 | Null Pointer | std::nullptr_t |The type of the null pointer literal nullptr. |C++11|
+
+
+#### Notes
+- The [sizeof()](https://en.cppreference.com/cpp/language/sizeof) operator:
+  - It computes the size (in bytes) of your variable/expression
+  - It evaluates the type or expression at compile time.
+  - For instance, sizeof(my_variable++) will report the size but will not actually increment the variable at runtime.
+- Fixed-Width Integers vs. Type Aliases: 
+  - Types like int32_t are not new fundamental compiler types
+  - They are type aliases managed via the using mechanism behind the scenes, mapping directly to whatever underlying native type satisfies the exact bit-width criteria.
+- The Unicode Strategy: 
+  - C++ doesn't increase the size of basic char variables to support modern Unicode text. 
+  - Instead, it utilizes char8_t, char16_t, and char32_t as strict type barriers, giving the compiler explicit clarity over string data representations.
