@@ -1,30 +1,30 @@
 ## C++ types
 
-|Category | Data Type |Description | Introduced / Major Change |
-|---------|-----------|------------|---------------------------|
-|Integer | int | Standard signed integer. | C++98 (Legacy from C)| |
-| |short| Short signed integer (at least 16 bits). | C++98 (Legacy from C)|
-| |long,Long signed integer (at least 32 bits). |C++98 (Legacy from C)|
-| |long long | Extended long signed integer (at least 64 bits). | C++11|
-| |unsigned int / short / long / long long,Unsigned variants of the integers above.,Same as their signed counterparts
-|Fixed-Width Integer|	int8_t / uint8_t|	Signed/unsigned integer guaranteed to be exactly 8 bits with no padding. (Usually aliases for signed/unsigned char). |C++11 (via <cstdint>)|
-| |int16_t / uint16_t | Signed/unsigned integer guaranteed to be exactly 16 bits. (Usually aliases for short). |C++11 (via <cstdint>)|
-| |int32_t / uint32_t | Signed/unsigned integer guaranteed to be exactly 32 bits. (Usually aliases for int). | C++11 (via <cstdint>)|
-| |int64_t / uint64_t |Signed/unsigned integer guaranteed to be exactly 64 bits. (Usually aliases for long long).| C++11 (via <cstdint>)|
-|Floating-Point |float |Single-precision floating-point number. |C++98 (Legacy from C)|
-| |double |Double-precision floating-point number.| C++98 (Legacy from C)|
-| |long double |Extended precision floating-point number. |C++98 (Legacy from C)|
-| |"std::float16_t, std::float32_t, std::float64_t, std::float128_t" |Fixed-width floating-point types (optional/extended). |C++23|
-|Boolean |bool |Represents true or false. |C++98 |
-|Character | char |"An 8-bit integer type used to represent character codes (like ASCII). Can be used for arithmetic." |C++98 (Legacy from C)|
-| |signed char / unsigned char | Explicitly signed/unsigned character types. | C++98 (Legacy from C) |
-| |wchar_t |Wide character type (used for larger character sets). |C++98 |
-| |char16_t |Character type for UTF-16 character representation. |C++11 |
-| |char32_t | Character type for UTF-32 character representation. |C++11|
-| |char8_t |Character type for UTF-8 character representation. |C++20|
-|Raw / Native Binary| std::byte| Represents a single byte of raw data. No arithmetic allowed; only bitwise operations.	| C++17|
-|Void | void | Represents an empty set of values (absence of type). | C++98 (Legacy from C)|
-| Null Pointer | std::nullptr_t |The type of the null pointer literal nullptr. |C++11|
+| Category | Data Type | Description | Introduced / Major Change | Literal Example |
+| :--- | :--- | :--- | :--- | :--- |
+| **Integer** | `int` | Standard signed integer. | C++98 (Legacy from C) | `42` |
+| | `short` | Short signed integer (at least 16 bits). | C++98 (Legacy from C) | `42` |
+| | `long` | Long signed integer (at least 32 bits). | C++98 (Legacy from C) | `42L` |
+| | `long long` | Extended long signed integer (at least 64 bits). | C++11 | `42LL` |
+| | `unsigned int / short / long / long long` | Unsigned variants of the integers above. | Same as signed counterparts | `42U`, `42UL`, `42ULL` |
+| **Fixed-Width Integer** | `int8_t / uint8_t` | Signed/unsigned integer guaranteed to be exactly 8 bits. | C++11 (via <cstdint>) | `int8_t(42)` |
+| | `int16_t / uint16_t` | Signed/unsigned integer guaranteed to be exactly 16 bits. | C++11 (via <cstdint>) | `int16_t(42)` |
+| | `int32_t / uint32_t` | Signed/unsigned integer guaranteed to be exactly 32 bits. | C++11 (via <cstdint>) | `42` / `42U` |
+| | `int64_t / uint64_t` | Signed/unsigned integer guaranteed to be exactly 64 bits. | C++11 (via <cstdint>) | `42LL` / `42ULL` |
+| **Floating-Point** | `float` | Single-precision floating-point number. | C++98 (Legacy from C) | `3.14f` |
+| | `double` | Double-precision floating-point number. | C++98 (Legacy from C) | `3.14` |
+| | `long double` | Extended precision floating-point number. | C++98 (Legacy from C) | `3.14L` |
+| | `std::float16_t / 32_t / 64_t / 128_t` | Fixed-width floating-point types (optional/extended). | C++23 | `3.14f16`, `3.14f32` |
+| **Boolean** | `bool` | Represents true or false. | C++98 | `true` |
+| **Character** | `char` | An 8-bit integer type used to represent character codes. | C++98 (Legacy from C) | `'A'` |
+| | `signed char / unsigned char` | Explicitly signed/unsigned character types. | C++98 (Legacy from C) | `(signed char)'A'` |
+| | `wchar_t` | Wide character type (used for larger character sets). | C++98 | `L'A'` |
+| | `char16_t` | Character type for UTF-16 character representation. | C++11 | `u'A'` |
+| | `char32_t` | Character type for UTF-32 character representation. | C++11 | `U'A'` |
+| | `char8_t` | Character type for UTF-8 character representation. | C++20 | `u8'A'` |
+| **Raw Binary** | `std::byte` | Represents a single byte of raw data. No arithmetic allowed. | C++17 | `std::byte{42}` |
+| **Void** | `void` | Represents an empty set of values (absence of type). | C++98 (Legacy from C) | None |
+| **Null Pointer** | `std::nullptr_t` | The type of the null pointer literal nullptr. | C++11 | `nullptr` |
 
 
 #### Notes
